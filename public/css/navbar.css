@@ -1,0 +1,31 @@
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img#logo {
+    height: 100px;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    font-weight: 600;
+    transition: color 0.3s ease;
+    background-color: var(--dark-primary-color);
+    padding: .8rem 1.3rem;
+    border-radius: 1.4rem;
+    color: #faf7f8;
+    transition: background-color 0.2s ease;
+}
+
+nav ul li a:hover{
+    background-color: var(--darker-primary-color);
+}

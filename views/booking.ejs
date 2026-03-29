@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking test</title>
+    <link rel="stylesheet" href="css/reset&Base.css">
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+    <header>
+        <%- include("partials/navbar") %>
+    </header>
+    <main>
+        <form action="/booking" method="post">
+            <div id="day-section">
+                <input class="day-input" type="radio" name="day" id="day-0" value="" required>
+                <label class="day-btn" for="day-0"></label>
+                <input class="day-input" type="radio" name="day" id="day-1" value="" required>
+                <label class="day-btn" for="day-1"></label>
+                <input class="day-input" type="radio" name="day" id="day-2" value="" required>
+                <label class="day-btn" for="day-2"></label>
+                <input class="day-input" type="radio" name="day" id="day-3" value="" required>
+                <label class="day-btn" for="day-3"></label>
+                <input class="day-input" type="radio" name="day" id="day-4" value="" required>
+                <label class="day-btn" for="day-4"></label>
+                <input class="day-input" type="radio" name="day" id="day-5" value="" required>
+                <label class="day-btn" for="day-5"></label>
+                <input class="day-input" type="radio" name="day" id="day-6" value="" required>
+                <label class="day-btn" for="day-6"></label>
+            </div>
+            <div id="time-section">
+                <input class="time-input" type="radio" name="time" value="8:00" id="time-1" required>
+                <label class="time-btn" for="time-1">8:00</label>
+                <input class="time-input" type="radio" name="time" value="10:00" id="time-2" required>
+                <label class="time-btn" for="time-2">10:00</label>
+                <input class="time-input" type="radio" name="time" value="13:00" id="time-3" required>
+                <label class="time-btn" for="time-3">13:00</label>
+                <input class="time-input" type="radio" name="time" value="15:00" id="time-4" required>
+                <label class="time-btn" for="time-4">15:00</label>
+            </div>
+            <div id="details-section">
+                <label for="name-input">Meno:</label>
+                <input type="text" name="name" id="name-input" minlength="2" placeholder="" required>
+                <label for="surname-input">Priezvisko:</label>
+                <input type="text" name="surname" id="surname-input" minlength="2" placeholder="" required>
+                <label for="tel-input">Číslo:</label>
+                <input  id="tel-input" 
+                        type="tel" 
+                        name="tel" 
+                        id="tel-input" 
+                        placeholder="+421123456789"
+                        maxlength="15"
+                        pattern="\+\d{9,14}"
+                        required>
+                <label for="email-input">Email:</label>
+                <input type="email" name="email" id="email-input" placeholder="priklad@email.com" required>
+                <div id="gdpr-section-special">
+                    <input id="gdpr-input" type="checkbox" required>
+                    <label for="gdpr-input">Súhlasím so spracovaním osobných údajov</label>
+                </div>
+            </div>
+            <button id="book-btn" type="submit">Objednať sa</button>
+        </form>
+    </main>
+    <footer>
+        <%- include("partials/footer") %>
+    </footer>
+    <script src="js/booking.js" defer></script>
+</body>
+</html>

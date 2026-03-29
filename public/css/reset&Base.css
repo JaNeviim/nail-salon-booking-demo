@@ -1,0 +1,39 @@
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #FAA4BD;
+    --secondary-color: #FAE3C6;
+    --dark-primary-color: #F564A9;
+    --darker-primary-color: #994b86;
+
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    color: #2b2b2b;
+    background-color: var(--secondary-color);
+    line-height: 1.6;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.85),
+        rgba(255, 255, 255, 0.85)
+    ),
+    url("../images/bachground.png") center / cover no-repeat;
+    height: 50rem;
+}
+
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
